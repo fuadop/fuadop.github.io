@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faTwitter, faFacebook, faInstagram, faCodepen } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faTwitter, faFacebook, faInstagram, faCodepen, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import Navbar from "./components/Navbar"
 
@@ -42,6 +42,11 @@ function App() {
               <li>
                 <a href="https://instagram.com/fuado_p" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/fuadop" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
               <li>
