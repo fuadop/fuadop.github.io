@@ -27,21 +27,25 @@ const defaultThemes = {
 const App = () => {
   const [theme, setTheme] = useState(defaultThemes.light);
   const [checked, setChecked] = useState(false);
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
 
   useEffect(() => {
-    if (checked) {
-      setTheme(defaultThemes.dark)
-    } else {
-      setTheme(defaultThemes.light)
-    }
-  }, [checked]);
+    // Check for the default theme from localstorage
+    const defaultTheme = localStorage.getItem('op-theme');
+
+    if (!defaultTheme) {
+      localStorage.setItem('op-theme', 'light');
+    } 
+
+    setChecked(defaultTheme === 'dark' ? true : false);
+    setTheme(defaultTheme === 'dark' ? defaultThemes.dark : defaultThemes.light);
+  }, []);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={checked ? defaultThemes.dark : defaultThemes.light}>
       <EmojiProvider data={emojiData}>
         <div className="container-fluid" style={{
-          paddingTop: width < 800 ? '30px' : '50px',
+          paddingTop: width < 1000 ? '30px' : '50px',
           backgroundColor: theme.backgroundColor,
           width: '100vw',
           height: '100%',
@@ -64,7 +68,11 @@ const App = () => {
                 </div>
                 <div className="mx-2">
                   <Switch
-                    onChange={(checked) => setChecked(checked)}
+                    onChange={(checked) =>  {
+                      setTheme(checked ? defaultThemes.dark : defaultThemes.light);
+                      localStorage.setItem('op-theme', checked ? 'dark' : 'light');
+                      setChecked(checked);
+                    }}
                     checked={checked}
                     checkedIcon={false}
                     uncheckedIcon={false}
@@ -83,7 +91,7 @@ const App = () => {
               </div>
             </div>
             {
-              width < 800 ? 
+              width < 1000 ? 
               <Mobile/>
               : <Desktop/>
             }

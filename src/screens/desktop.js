@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Emoji } from 'react-apple-emojis';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import { withTheme } from '../utils/themeProvider';
 
 const Desktop = ({ theme }) => {
@@ -256,6 +257,269 @@ const Desktop = ({ theme }) => {
             </div>
           </div>
         </div>
+        <div className="row" style={{
+          marginTop: '200px'
+        }}>
+          <div className="col-4" style={{
+            textAlign: 'right'
+          }}>
+            <h3 style={{
+              color: theme.headingColor,
+              fontWeight: '700',
+              marginRight: '70px',
+              fontSize: '16px',
+              lineHeight: '18.75px',
+              letterSpacing: '8%',
+              marginBottom: '30px',
+            }}>
+              EXPERIENCE
+            </h3>
+          </div>
+          <div className="col-8">
+            <div className="row justify-content-center align-items-center" style={{
+              marginLeft: '25px'
+            }}>
+              <div className="col-12">
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  <b style={{
+                    fontWeight: '900'
+                  }}>
+                    Zsolutions limited.{" "} 
+                  </b>
+                  Lagos, Nigeria
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  July 2021 - Present
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '500',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  Software Engineer <br/> (Backend)
+                </h3>
+              </div>
+              <div className="col-12" style={{
+                marginTop: '25px'
+              }}>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  <b style={{
+                    fontWeight: '900'
+                  }}>
+                    Ligosmart.{" "} 
+                  </b>
+                  Lagos, Nigeria
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  March 2021 - September 2021
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '500',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  Software Engineer <br/> (Mobile, Backend)
+                </h3>
+              </div>
+              <div className="col-12" style={{
+                marginTop: '25px'
+              }}>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  <b style={{
+                    fontWeight: '900'
+                  }}>
+                    Innovation Associates Nig. Ltd.{" "} 
+                  </b>
+                  Lagos, Nigeria
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '300',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  December 2020 - August 2021
+                </h3>
+                <h3 style={{
+                  color: theme.textColor,
+                  fontWeight: '500',
+                  fontSize: '16px',
+                  lineHeight: '18.75px',
+                }}>
+                  Software Engineer <br/> (Mobile, Frontend, Backend)
+                </h3>
+              </div>
+              <a href="https://drive.google.com/file/d/1NPRv5GiwcKVDaIf_lssLQaV0EnGLlPQV/view?usp=sharing" target="_blank" rel="noreferrer" style={{
+                textDecoration: 'none'
+              }}>
+                <div className="d-flex align-items-center" style={{
+                  marginTop: '60px'
+                }}>
+                  <h3 style={{
+                    marginRight: '16px',
+                    color: theme.textColor,
+                    fontWeight: '700',
+                    fontSize: '16px',
+                    lineHeight: '18.75px',
+                  }}>
+                    View My Resume
+                  </h3>
+                  <div className="mb-2">
+                    <AiOutlineArrowRight
+                      size="24px"
+                      color={theme.headingColor}
+                    />                
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style={{
+          marginTop: '80px',
+          paddingRight: '35px',
+          paddingLeft: '35px',
+        }}>
+        </div>
+        <ul className="list-unstyled d-flex justify-content-end align-items-center">
+          <li
+            style={{
+              marginRight: '60px',
+            }}
+          >
+            <a href="mailto:fuad@fuadolatunji.me" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                EMAIL
+              </h3>
+            </a>
+          </li>
+          <li
+            style={{
+              marginRight: '60px',
+            }}
+          >
+            <a href="https://linkedin.com/in/fuadop" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                LINKEDIN
+              </h3>
+            </a>
+          </li>
+          <li
+            style={{
+              marginRight: '60px',
+            }}
+          >
+            <a href="https://github.com/fuadop" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                GITHUB
+              </h3>
+            </a>
+          </li>
+          <li
+            style={{
+              marginRight: '60px',
+            }}
+          >
+            <a href="https://twitter.com/fuadop2" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                TWITTER
+              </h3>
+            </a>
+          </li>
+          <li
+            style={{
+              marginRight: '60px',
+            }}
+          >
+            <a href="https://instagram.com/fuado_p" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                INSTAGRAM
+              </h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://blog.fuadolatunji.me" style={{
+              textDecoration: 'none',
+            }}>
+              <h3 style={{
+                color: theme.headingColor,
+                fontWeight: '700',
+                fontSize: '16px',
+                lineHeight: '18.75px',
+                letterSpacing: '8%',
+              }}>
+                BLOG  
+              </h3>
+            </a>
+          </li>
+        </ul>
       </div>
     </Fragment>
   );

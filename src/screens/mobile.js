@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Emoji } from 'react-apple-emojis'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { FiMail, FiLinkedin, FiGithub, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { SiHashnode } from 'react-icons/si';
 import { withTheme } from '../utils/themeProvider';
 
 const Mobile = ({ theme }) => {
@@ -405,16 +406,6 @@ const Mobile = ({ theme }) => {
           paddingRight: '35px',
           paddingLeft: '35px',
         }}>
-          <h3 style={{
-            color: theme.headingColor,
-            fontWeight: '700',
-            fontSize: '16px',
-            lineHeight: '18.75px',
-            letterSpacing: '8%',
-            marginBottom: '30px',
-          }}>
-            FEATURED PROJECTS
-          </h3>
         </div>
         <div>
           <ul className="list-unstyled d-flex justify-content-center align-items-center">
@@ -479,6 +470,19 @@ const Mobile = ({ theme }) => {
             >
               <a href="https://instagram.com/fuado_p" target="_blank" rel="noreferrer">
                 <FiInstagram
+                  size="16px"
+                  color={theme.headingColor}
+                />
+              </a>
+            </li>
+            <li
+              style={{
+                marginRight: '11px',
+                marginLeft: '11px',
+              }}
+            >
+              <a href="https://blog.fuadolatunji.me" target="_blank" rel="noreferrer">
+                <SiHashnode
                   size="16px"
                   color={theme.headingColor}
                 />
