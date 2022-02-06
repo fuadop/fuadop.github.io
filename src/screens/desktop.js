@@ -376,7 +376,7 @@ const Desktop = ({ theme }) => {
                   Software Engineer <br/> (Mobile, Frontend, Backend)
                 </h3>
               </div>
-              <a href="https://drive.google.com/file/d/1NPRv5GiwcKVDaIf_lssLQaV0EnGLlPQV/view?usp=sharing" target="_blank" rel="noreferrer" style={{
+              <a href="https://drive.google.com/file/d/1xZC592jM0p1_EYpkUQSy6HXzXK1HEZl4/view?usp=sharing" target="_blank" rel="noreferrer" style={{
                 textDecoration: 'none'
               }}>
                 <div className="d-flex align-items-center" style={{
